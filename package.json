@@ -1,0 +1,72 @@
+{
+  "name": "restaurant-pos",
+  "version": "1.0.0",
+  "description": "A React Native Expo-based Point of Sale system for restaurants",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "^51.0.0",
+    "react-native": "^0.74.0",
+    "react": "^18.2.0",
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/bottom-tabs": "^6.5.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "@react-native-async-storage/async-storage": "^1.21.0",
+    "react-native-screens": "^3.29.0",
+    "react-native-safe-area-context": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.73.0",
+    "expo-cli": "^6.4.0"
+  },
+  "expo": {
+    "name": "restaurant-pos",
+    "slug": "restaurant-pos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 21
+          },
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
